@@ -6,21 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Landing Page - Amit Kumar</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
-    <div class="navbar">
+    <nav>
         <span class="logo">Logo</span>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a class="active" href="hackathon.html">Hackathons</a></li>
-            <li><a href="project.html">Project</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><button>toggle</button></li>
-        </ul>
-        <span class="night-mode">Night mode</span>
-    </div>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="hackathon.html">Hackathons</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="login.html">Login</a></li>
+
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
 
 <!-- Upcoming Hackathons ---->
 <section><h1 class="discover">Discover</h1>
